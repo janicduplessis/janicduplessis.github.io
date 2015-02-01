@@ -8,19 +8,24 @@
 </head>
 
 <body>
-	<nav class="white" role="navigation">
-		<div class="container">
-			<div class="nav-wrapper"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-				<ul id="nav-mobile" class="right side-nav">
-					<li><a href="contact.html">Contact</a></li>
-					<li><a href="#">Contact</a></li>
-				</ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+	<header>
+	<div class="navbar-fixed">
+		<nav class="white" role="navigation">
+			<div class="container">
+				<div class="nav-wrapper">
+					<ul id="nav-mobile" class="right side-nav">
+						<li><a href="contact.html">Home</a></li>
+						<li><a href="#">Articles</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+				</div>
 			</div>
-		</div>
-	</nav>
-	<div>
-		{{ content }}
+		</nav>
 	</div>
+	</header>
+	<main>
+		{{ content }}
+	</main>
 	<footer class="page-footer teal">
 		<div class="container">
 			<div class="row">
@@ -29,7 +34,7 @@
 		</div>
 		<div class="footer-copyright">
 			<div class="container">
-				Janic Duplessis
+				© 2015 Janic Duplessis
 			</div>
 		</div>
 	</footer>
