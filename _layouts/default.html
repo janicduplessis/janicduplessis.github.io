@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>{{ page.title }}</title>
+	<title>Janic's blog - {{ page.title }}</title>
 	<meta name="author" content="Janic Duplessis" />
 	<link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 	<link type="text/css" rel="stylesheet" href="css/style.css"/>
@@ -14,9 +14,9 @@
 			<div class="container">
 				<div class="nav-wrapper">
 					<ul id="nav-mobile" class="right side-nav">
-						<li><a href="contact.html">Home</a></li>
-						<li><a href="#">Articles</a></li>
-						<li><a href="#">Contact</a></li>
+    					<li><a href="/"{% if page.url == "/index.html" %} class="teal-text"{% endif %}>Home</a></li>
+    					<li><a href="/articles.html"{% if page.url == "/articles.html" %} class="teal-text"{% endif %}>Articles</a></li>
+    					<li><a href="/contact.html"{% if page.url == "/contact.html" %} class="teal-text"{% endif %}>Contact</a></li>
 					</ul><a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
 				</div>
 			</div>
